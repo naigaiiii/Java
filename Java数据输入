@@ -1,0 +1,30 @@
+//数据输入
+package test1;
+//导包：导包的动作必须出现在类定义的上边
+import java.util.Scanner;
+public class tm2 {
+	public static void main(String[] args) {
+		
+	
+	//创建对象,只有SC是变量名，可以变
+	Scanner sc=new Scanner(System.in);
+	//接收数据，只有i是变量名，可以变
+	int i=sc.nextInt();
+	//输出数据
+	System.out.println("i:"+i);
+	System.out.println("-------------");
+	//一座寺庙里住着三个和尚，他们的身高必须经过测量得出，请用程序实现获取这三个和尚的最高身高。
+	Scanner c=new Scanner(System.in);
+	System.out.println("请输入第一个和尚的身高：");
+	int height1=c.nextInt();
+	System.out.println("请输入第二个和尚的身高：");
+	int height2=c.nextInt();
+	System.out.println("请输入第三个和尚的身高：");
+	int height3=c.nextInt();
+	int max=(height1>height2?height1:height2)>height3?
+			(height1>height2?height1:height2):height3;
+	System.out.println("max:"+max);
+	System.out.println("-------------");		
+
+}
+}
