@@ -1,0 +1,43 @@
+public class t1 {
+	public static void main(String[] args){
+	//定义两个变量
+		int a=10;
+		int b=20;
+	//获取两个数中的最大值
+		int max=a>b?a:b;
+	//输出结果
+		System.out.println("max:"+max);
+		System.out.println("-------------")
+}
+	
+
+}
+  //动物园里有两只老虎，一直两只老的体重分别为180kg、200kg，请用程序实现判断两只老虎的体重是否相同。
+  
+public class t2 {
+  public static void main(String[] args){
+  
+int weight1=180;
+		int weight2=200;
+		boolean weight3=weight1==weight2?true:false;
+		System.out.println("weight3:"+weight3);
+	}
+	
+
+}
+
+//一座寺庙里住着三个和尚，已知他们的身高分别为150cm、210c、165cm，请用程序实现获取这三个和尚的最高身。
+public class t3 {
+  public static void main(String[] args){
+int height1=150;
+		int height2=210;
+		int height3=165;
+		int max1=(height1>height2?height1:height2)>height3?
+				(height1>height2?height1:height2):height3;
+				System.out.println("max1:"+max1);
+				
+	}
+	
+
+}
+
