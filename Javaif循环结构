@@ -1,0 +1,106 @@
+//流程控制
+package test1;
+import java.util.Scanner;
+
+public class tm3 {
+	public static void main(String[] args) {
+		//if格式语句1
+		System.out.println("开始");
+		//定义两个变量
+		int a=10;
+		int b=20;
+		
+		//需求：判断a和b的值是否相等，如果相等，就在控制台输出：a等于b。
+		if (a==b) {
+			System.out.println("a等于b");
+			
+		}
+		//需求：判断a和c的值是否相等，如果相等，就在控制台输出：a等于c。
+		int c=10;
+		if (a==c) {
+			
+			System.out.println("a等于c");
+		}
+		System.out.println("-------------");	
+		//if格式语句2
+				//需求：判断a是否大于b，如果是，在控制台输出：a的值大于b，如果不是，在控制台输出：a的值不大于b。
+				if (a>b) {
+					System.out.println("a的值大于b");
+					
+				} else {
+					System.out.println("a的值不大于b");
+
+				}
+		System.out.println("-------------");
+		/*eg:
+		 * 任意给出一个整数，请用程序实现判断该整数是奇数还是偶数，并在控制台输出该整数是奇数还是偶数。
+		 * */
+		Scanner sc=new Scanner(System.in);
+		System.out.println("请输入该整数：");
+		int number=sc.nextInt();
+		if (number%2==0) {
+			System.out.println(number+"偶数");
+			
+		} else {
+			System.out.println(number+"奇数");
+
+		}
+		System.out.println("-------------");	
+		//if格式语句3
+		//需求：键盘录入一个星期数（1，2，3...7）。输出对应的星期一，星期二...星期日
+		Scanner sa=new Scanner(System.in);
+		System.out.println("请输入星期数：");
+		int week=sa.nextInt();
+		if (week==1) {
+			System.out.println(week+"星期一");
+			
+		}else if (week==2) {
+			System.out.println(week+"星期二");
+		} else if (week==3) {
+			System.out.println(week+"星期三");
+		}else if (week==4) {
+			System.out.println(week+"星期四");
+		}else if (week==5) {
+			System.out.println(week+"星期五");
+		}else if (week==6) {
+			System.out.println(week+"星期六");
+		}
+		else {
+			System.out.println(week+"星期日");
+
+		}
+		System.out.println("-------------");	
+		/*eg：
+		 * 小明快要期末考试了，小明爸爸对他说，会根据他不同的考试成绩，
+		        送他不同的礼物，假如你可以控制小明的得分，请用程序实现小明
+		        到底该获得什么样的礼物，并在控制台输出。
+		    (95到100 自行车，90到94游乐园，80到89变形金刚玩具
+		    80挨打)     
+		 */
+		Scanner ca=new Scanner(System.in);
+		System.out.println("请输入小明的分数：");
+		int score=ca.nextInt();
+		
+		if (score>100||score<0) {
+			System.out.println("您输入的分数有误");
+		}else if (score>=95) {
+			System.out.println(score+"分可获得自行车");
+			
+		}else if (score>=90) {
+			System.out.println(score+"分可以去游乐园");
+		}else if (score>=80) {
+			System.out.println(score+"分可获得变形金刚");
+			
+		}
+		else {
+			System.out.println(score+"分可获得胖揍");
+
+		}
+		
+		System.out.println("结束");
+			
+		
+		
+	}
+
+}
