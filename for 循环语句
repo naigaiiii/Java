@@ -1,0 +1,83 @@
+package test1;
+
+public class tm5 {
+	public static void main(String[] args) {
+		//for循环语句
+		/*
+		 for (初始化活句;条件判断活句; 条件控活句) {
+                     循环体语句;
+                       执行流程:
+         ①执行初始化语句
+         ②执行条件判断语句,看其结果是true还是false
+                      如果是false, 循环结束
+                      如果是true,继续执行
+         ③执行循环体语句
+                        执行条件控制语句
+                        回到②继续
+
+		 */
+		//在控制台输出五次“HelloWorld”
+		for (int i = 1; i <=5; i++) {
+			System.out.println("HelloWorld");
+			
+		}
+		System.out.println("-------------");
+		//eg:
+		//在控制台输出1-5和5-1的数据
+		for (int i = 1; i <=5; i++) {
+			System.out.println(i);
+			
+		}
+		System.out.println("-------------");
+		for (int i = 5; i >=1; i--) {
+			System.out.println(i);
+			
+		}
+		System.out.println("-------------");
+		//eg:求1-5之间的数据和，并把求和结果在控制台输出
+		int sum=0;
+		for (int i = 1; i <=5; i++) {
+			sum +=i;
+		}
+		System.out.println(sum);
+		System.out.println("-------------");
+		//eg：求1-100之间的偶数和，并把求和结果在控制台输出
+		int sum1=0;
+		/*for (int i = 1; i <=100; i++) {
+			if (i%2==0) {
+				sum1 +=i;
+				
+			}
+		}
+		*/
+		for (int i = 1; i <=50; i++) {
+			sum1 +=i*2;
+		}
+		System.out.println(sum1);
+		System.out.println("-------------");
+		//eg:在控制台输出所有水仙花数（水仙花是一个三位数，水仙花的个位、十位、百位的数字立方和等于原来的数）
+		
+		 for (int  i = 100;  i <=999;  i++) {
+			 int a=(i%10); 
+			 int b=(i/100);
+			 int c=(i%100/10);
+			 if (a*a*a+b*b*b+c*c*c == i) {
+				 System.out.println(i);
+			} 
+		}
+		 System.out.println("-------------");
+		 //eg:统计“水仙花数”一共有多少个，并在控制台输出个数。
+		 int count=0;
+		 for (int i = 100; i < 1000; i++) {
+			int ge=(i%10);
+			int shi=(i%100/10);
+			int bai=(i/100);
+			if (ge*ge*ge+shi*shi*shi+bai*bai*bai ==i) {
+				count ++;
+			}
+		}
+		 System.out.println(count);
+		 System.out.println("-------------");
+	}
+
+}
