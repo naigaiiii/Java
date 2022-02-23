@@ -1,0 +1,71 @@
+package test1;
+/*
+do….while循环语句格式
+基本格式:
+do {循环体语句;
+}while(条件判断语句);
+
+完整格式:
+初始化语句;
+do{
+循环体语句;
+条件控制语句;
+}while(条件判断语句); 
+执行流程:
+①执行初始化语句
+
+②执行循环体语句
+
+③执行条件控制语句
+
+④执行条件判断语句,看其结果是true还是false
+如果是false,循环结束
+如果是true,继续执行
+
+回到②继续
+
+ 
+ */
+
+public class tm7 {
+	public static void main(String[] args) {
+		//在控制台输出5次“HelloWorld”
+		int i=1;
+		do {
+			System.out.println("HelloWorld");
+			i++;
+		} while (i<=5);
+		//三者区别
+		//for循环
+		for(int k = 3; k<3; k++) {
+		System.out.println("我爱Java");
+		}
+		System. out.println ("-----------");
+		//while循环
+		int j= 3;
+		while (j<3) {
+		System.out.println("我爱Java");
+		j++ ;
+		}
+		System.out.println("-------");
+		//do. . .while循环
+		int p= 3;
+		do {
+		System.out.println("我爱Java");
+		p++;
+		} while (p<3) ;
+		//死循环
+		/*
+		for(;;) {
+		System. out.println("for");
+		}
+		while (true) {
+		System. out.println ("while");
+		}
+		do (
+		System.out.println ("do. . .while");
+		} while(true);
+		*/
+	}
+
+}
