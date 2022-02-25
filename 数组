@@ -1,0 +1,86 @@
+package test1;
+/*
+ 动态初始化:
+	初始化时只指定数组长度,由系统为数组分配初始值
+	格式:数据类型[] 变量名= new 数据类型[数组长度];
+	范例:int [] arr = new int[3];
+ */
+
+public class tm9 {
+	public static void main(String[] args) {
+		//定义一个数组
+		int [] arr =new int[3];
+		/*
+		 左边:
+            int:说明数组中的元素类型是int类型
+			[] :说明这是一个数组
+			arr:这是数组的名称
+		右边:
+			new:为数组申请内存空间
+			int:说明数组中的元素类型是int类型
+			[]:说明这是一个数组
+			3:数组长度,其实就是数组中的元素个数
+		 */
+		//输出数组名
+		System.out.println(arr );
+		//输出数组中的元素
+		System.out.println(arr [0]);
+		System.out.println(arr[1]);
+		System.out.println(arr[2]);
+		//给数组中的元素赋值
+		arr[0]=100;
+		arr[2]=200;
+		//输出数组名及元素
+		System.out.println(arr);
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
+		System.out.println(arr[2]);
+		
+/*
+ 静态初始化:初始化时指定每个数组元素的初始值,由系统决定数组长度
+◇格式:数据类型[]变量名= new 数据类型[]{数据1,数据2,数据3,...}
+◇范例:int [] arr = new  int[]{1,2,3};
+◇简化格式:数据类型[]变量名={数据1,数据2,数据3,...}
+   范例:int [] arr = {1,2,3};
+
+ */
+		//定义数组
+		int[] arr1 ={1,2,3};
+		//输出数组名
+		System.out.println(arr1);
+		//输出数组中的元素
+		System.out.println(arr1[0]);
+		System.out.println(arr1[1]);
+		System.out.println(arr1[2]);
+//遍历
+		int[] arr2 ={11,22,33,44,55};
+		for (int i = 0; i <5; i++) {
+			System.out.println(arr2[i]);
+		}
+//length,获取数组元素数量
+		for (int i = 0; i < arr2.length; i++) {
+			System.out.println(arr2[i]);
+			
+		}
+		System.out.println("-------------");
+//eg:获取最值
+		int[] arr3={150,152,171,163,130,168,81,128};
+		
+		int max=arr3[0];
+		for (int i = 0; i < arr3.length; i++) {
+			if (arr3[i]>max) {
+				max=arr3[i];
+			}
+		}
+		System.out.println("max:"+max);
+		System.out.println("-------------");
+		int min=arr3[0];
+		for (int i = 0; i < arr3.length; i++) {
+			if (arr3[i]<min) {
+				min=arr3[i];
+			}
+		}
+		System.out.println("min:"+min);
+	}
+
+}
