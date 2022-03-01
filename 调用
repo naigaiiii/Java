@@ -1,0 +1,108 @@
+package test1;
+
+
+
+/*
+方法：是将具有独立功能的代码块组织成为一个整体，使其具有特殊功能的代码集
+定义格式：
+	public static void 方法名(){
+		//方法体
+	}
+	调用格式
+	方法名();
+方法调用：
+格式：方法名();  Number();
+注意：方法必须先定义后调用，否则程序会报错
+ */
+
+public class tm10 {
+public static void main(String[] args) {
+	//调用方法
+	Number();
+	
+}
+//需求：定义一个方法，在方法中定义一个变量，判断该数据是否为偶数
+public static void Number() {
+	//定义变量
+	int number=10;
+	//判断该数据是否是偶数
+	if (number%2==0) {
+		System.out.println(true);
+		
+	} else {
+		System.out.println(false);
+
+	}
+
+		
+	
+	
+}
+
+}
+
+
+
+
+
+
+
+package test1;
+/*带参数方法的定义和调用
+定义格式：
+	public static void 方法名(参数){....}
+调用格式:
+方法名(参数); 
+*/
+
+
+
+public class tm101 {
+	public static void main(String[] args) {
+		//常量值调用
+		Number(50);
+		//变量值调用
+		int number=10;
+		Number(number);
+	}
+	//需求：定义一个方法，该方法接收一个参数，判断该数据是否为偶数
+	public static void Number(int number) {
+		 if (number%2==0) {
+			System.out.println(true);
+		} else {
+			System.out.println(false);
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+package test1;
+//带参数方法的定义和调用
+public class tm102 {
+	public static void main(String[] args) {
+		//常量调用
+		getMax(20, 30);
+		//变量调用
+		int a=60;
+		int b=40;
+		getMax(a, b);
+		
+	}
+	public static void getMax(int a,int b) {
+		if (a>b) {
+			System.out.println(a);
+		} else {
+			System.out.println(b);
+
+		}
+		
+	}
+
+}
